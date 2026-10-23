@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muluken Abeje's Information Technology student portfolio, skills, and projects.">
+  <title>Muluken Abeje | IT Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #10243a;
+      color: #fff;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 { color: #5eead4; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover { color: #5eead4; }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #10243a, #155e75);
+      color: #fff;
+    }
+
+    .profile-photo {
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      border: 4px solid #5eead4;
+      margin-bottom: 18px;
+      background: #dbeafe;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin-bottom: 10px;
+      text-transform: none;
+    }
+
+    .hero p {
+      margin: 10px auto 22px;
+      max-width: 680px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #5eead4;
+      color: #10243a;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .button:hover { background: #99f6e4; }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 52px 22px;
+    }
+
+    section h2 {
+      color: #0f766e;
+      margin-bottom: 18px;
+      font-size: 28px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+      overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #155e75;
+    }
+
+    .card a, #contact a {
+      color: #0f766e;
+      font-weight: bold;
+    }
+
+    .project-type {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #075985;
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 8px 0;
+    }
+
+    .project-link { display: inline-block; margin-top: 12px; }
+
+    #contact p { margin-bottom: 8px; }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #10243a;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { padding: 55px 18px; }
+      section { padding: 38px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Muluken Abeje</h2>
+    <nav aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <!-- Put your own photo in the images folder and name it profile.jpg -->
+   <img
+  src="./images/profile.jpg"
+  alt="Muluken Abeje"
+  class="profile-photo"
+>
+      <h1>Hello, I'm Muluken Abeje</h1>
+      <p>
+        I am a fourth-year Information Technology student at Mekdela Amba University.
+        I am interested in web development, software development, and emerging technologies.
+      </p>
+      <a class="button" href="#projects">View My Projects</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Muluken Abeje. I am a fourth-year Information Technology student
+        at Mekdela Amba University. I enjoy learning about web development and software
+        development, and I work to improve my technical skills by learning and building projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Building the structure of web pages.</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Designing and styling responsive web pages.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Making web pages interactive.</p>
+        </div>
+        <div class="card">
+          <h3>React, Node.js and MongoDB</h3>
+          <p>Technologies used in my web development project work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Daycare Management System</h3>
+          <p>
+            A web-based system designed to manage children, parents, staff, attendance,
+            and payment information.
+          </p>
+          <p><strong>Technologies:</strong> React, Node.js, Express.js, MongoDB</p>
+          <a class="project-link"
+             href="https://github.com/mulukenabeje693-netizen/daycre-during-internship"
+             target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>Alumni Service Management System</h3>
+          <span class="project-type">Proposed Project</span>
+          <p>
+            A proposed web-based system for Mekdela Amba University to manage alumni
+            records, support graduate registration, share job opportunities and announcements,
+            and help staff prepare reports.
+          </p>
+          <p><strong>Planned technologies:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Mekdela Amba University</h3>
+        <p><strong>Field of Study:</strong> Information Technology (IT)</p>
+        <p><strong>Level:</strong> Fourth-year undergraduate student</p>
+        <p><strong>Degree:</strong> Bachelor's degree in progress</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:mulukenabeje693@gmail.com">mulukenabeje693@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/mulukenabeje693-netizen"
+        target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Muluken Abeje. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

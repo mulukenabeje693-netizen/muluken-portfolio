@@ -1,0 +1,10 @@
+Place your own profile photo in this folder and name the file exactly:
+profile.jpg
+
+The HTML expects this path: /profile.jpg
+If your photo is a PNG file, either convert it to JPG or update the image src in index.html to images/profile.png.
+<<img
+  src="images/profile.jpg"
+  alt="Muluken Abeje"
+  class="profile-photo"
+>">
